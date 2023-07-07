@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Lexend Deca', sans-serif;
+    background-color: #023047;
+
+}
+
+.calc-container{
+        border: 1px solid #8ECAE6;
+        min-height: 40vh;
+        width: 350px;
+        margin: 10rem auto;
+        background-color: #023047;
+
+}
+input{
+    width: 100%;
+    height: 4rem;
+    text-align: right;
+    padding: 5px;
+    font-size: 25px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    
+}
+.buttons{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 5px;  
+    cursor: pointer;
+}
+
+
+.reset, .del{ 
+    background-color: #FB8500;
+}
+
+.reset:hover, .del:hover, .equal:hover{
+    background-color: #8ECAE6;
+    color: #fff;
+}
+.equal{
+    grid-column: 4/5;
+    grid-row: 4/6;
+    background-color: #FB8500;
+}
+
+.zero{
+    grid-row: 5/6;
+    grid-column: 1/3;
+}
+
+button{
+    padding: 1rem;
+    font-weight: 500;
+    font-size: 18px;
+    /* color: #fff; */
+    text-align: center;
+    border: 1px solid #000;
+
+}
+
+
+
+.number{
+    background-color: #fff;
+    color: #000;
+    
+}
+.number:hover{
+    background-color: #8ECAE6;
+    color: #fff;
+}
+.multiply, .divide, .add, .subtract, .deci{
+    background-color: #8ECAE6;
+}
+
+.multiply:hover, .divide:hover, .add:hover, .subtract:hover, .deci:hover{
+    background-color: #fff;
+    color: #8ECAE6;
+}
